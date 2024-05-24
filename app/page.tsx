@@ -40,7 +40,7 @@ export default function Home() {
         setErrors(validate(values))
         if (values.email && values.password) {
             console.log(values)
-            await axios.post("https://paxserver.onrender.com/user/userDetails", {
+            await axios.post("https://paxserver-7ydn.onrender.com/user/userDetails", {
                 email: values.email, password: values.password
             })
                 .then((response) => {

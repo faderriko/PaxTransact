@@ -22,7 +22,7 @@ export default function Home() {
 
 
     const postOTP = async(userId: String, OTP: String)=>{
-        await axios.patch("https://paxserver.onrender.com/user/updateDetails", {
+        await axios.patch("https://paxserver-7ydn.onrender.com/user/updateDetails", {
             userId: userId, OTP: OTP
         })
             .then((response) => {
